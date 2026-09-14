@@ -1,11 +1,13 @@
 #!/bin/bash
 
+set -e
+
 echo "Starting Nginx installation..."
 
-apt-get update -y
-apt-get install -y nginx
+sudo apt-get update -y
+sudo apt-get install -y nginx
 
-systemctl enable nginx
-systemctl start nginx
+sudo systemctl enable nginx
+sudo systemctl start nginx
 
 echo "Nginx installation completed successfully."
