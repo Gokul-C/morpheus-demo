@@ -4,5 +4,5 @@ set -e
 
 MESSAGE="<%=cypher.read('secret/nginx-demo-message')%>"
 
-echo "Cypher value retrieved successfully."
-echo "Message length: ${#MESSAGE}"
+echo "Cypher value retrieved:"
+echo "$MESSAGE"
